@@ -1,0 +1,127 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  #maps {
+    height: 400px;
+    width: 600px;
+  }
+  
+  .photo {}
+  
+  .toolbar {
+    background-color: #4285F4;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h3 {
+      color: #fff;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+  
+  .subhead {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.010em;
+    line-height: 24px;
+  }
+  
+  .toolbar + .details {
+    margin-top: 5px;
+  }
+  
+  .details {
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    font-size: 13px;
+    padding: 5px 10px;
+    span {
+      padding-top: 4px;
+      width: 230px;
+      word-wrap: break-word;
+    }
+  }
+  
+  .desc {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    input[type=checkbox] {
+      display: none;
+    }
+  }
+  
+  .icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    margin-right: 10px;
+  }
+  
+  .open-details {
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+  
+  h3 .small-details {
+    border-top: 1px solid #e6e6e6;
+    color: #757578;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .small-details {
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  .infoLayer {
+    opacity: 1;
+    width: 280px;
+    transform: translateZ(0px);
+    position: absolute;
+    visibility: visible;
+    left: 267.619px;
+    bottom: -15.6385px;
+    cursor: default;
+  }
+  
+  .icon-button {}
+  
+  .infoLayer-close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  
+  .whiteframe {
+    box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  }
+  
+  a {
+    color: #4285F4;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for times */
+  
+  .list, .first-icons, .open-hours {}
