@@ -17,7 +17,7 @@ function bindInfoWindow(marker, map, location) {
             });
             var boxText = document.createElement('div');
             boxText.style.cssText = 'background: #fff;';
-            boxText.classList.add('md-whiteframe-2dp');
+            boxText.classList.add('whiteframe');
 
             function buildPieces(location, el, part, icon) {
                 if (location[part] === '') {
@@ -96,36 +96,36 @@ function bindInfoWindow(marker, map, location) {
 
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(51.165691, 10.451526000000058), // The middle of germany
-        zoom: 5, 
-        gestureHandling: 'auto', 
-        fullscreenControl: true, 
-        zoomControl: true,
-        disableDoubleClickZoom: true,
+        center: new google.maps.LatLng(51.165691, 10.451526000000058), // The middle of germany (Latitude and Longitude)
+        zoom: 5, // Level: 1 until 25
+        gestureHandling: 'auto', // Options: 'auto' or 'greedy' or 'cooperative' or 'none'
+        fullscreenControl: true, // Options: true or false
+        zoomControl: true, // Options: true or false
+        disableDoubleClickZoom: true, // Options: true or false
 
-        mapTypeControl: true,
+        mapTypeControl: true, // Options: true or false
         mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR, // Options: HORIZONTAL_BAR or DROPDOWN_MENU or HIDE
         },
-        scaleControl: true,
-        scrollwheel: true,
-        streetViewControl: true,
-        draggable: true,
-        clickableIcons: true,
+        scaleControl: true, // Options: true or false
+        scrollwheel: true, // Options: true or false
+        streetViewControl: true, // Options: true or false
+        draggable: true, // Options: true or false
+        clickableIcons: true, // Options: true or false
         fullscreenControlOptions: {
-            position: google.maps.ControlPosition.TOP_RIGHT
+            position: google.maps.ControlPosition.TOP_RIGHT // Options: BOTTOM_LEFT or BOTTOM_RIGHT or BOTTOM_CENTER or TOP_LEFT or TOP_RIGHT or TOP_CENTER or RIGHT_TOP or RIGHT_BOTTOM or RIGHT_CENTER or LEFT_TOP or LEFT_BOTTOM or LEFT_CENTER
         },
         zoomControlOptions: {
-            position: google.maps.ControlPosition.RIGHT_BOTTOM
+            position: google.maps.ControlPosition.RIGHT_BOTTOM // Options: BOTTOM_LEFT or BOTTOM_RIGHT or BOTTOM_CENTER or TOP_LEFT or TOP_RIGHT or TOP_CENTER or RIGHT_TOP or RIGHT_BOTTOM or RIGHT_CENTER or LEFT_TOP or LEFT_BOTTOM or LEFT_CENTER
         },
         streetViewControlOptions: {
-            position: google.maps.ControlPosition.RIGHT_BOTTOM
+            position: google.maps.ControlPosition.RIGHT_BOTTOM // Options: BOTTOM_LEFT or BOTTOM_RIGHT or BOTTOM_CENTER or TOP_LEFT or TOP_RIGHT or TOP_CENTER or RIGHT_TOP or RIGHT_BOTTOM or RIGHT_CENTER or LEFT_TOP or LEFT_BOTTOM or LEFT_CENTER
         },
         mapTypeControlOptions: {
-            position: google.maps.ControlPosition.TOP_LEFT
+            position: google.maps.ControlPosition.TOP_LEFT // Options: BOTTOM_LEFT or BOTTOM_RIGHT or BOTTOM_CENTER or TOP_LEFT or TOP_RIGHT or TOP_CENTER or RIGHT_TOP or RIGHT_BOTTOM or RIGHT_CENTER or LEFT_TOP or LEFT_BOTTOM or LEFT_CENTER
         },
 
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeId: google.maps.MapTypeId.ROADMAP, // Options: ROADMAP or SATELLITE or HYBRID or TERRAIN
 
         styles: [],
 
